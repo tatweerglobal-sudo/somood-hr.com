@@ -1,5 +1,11 @@
 RewriteEngine On
 
+# If requesting /ar or /ar/, serve ar/index.html directly
+RewriteRule ^ar/?$ ar/index.html [L]
+
+# If requesting /fr or /fr/, serve fr/index.html directly
+RewriteRule ^fr/?$ fr/index.html [L]
+
 # Redirect Trailing Slashes If not a folder...
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_URI} (.+)/$
