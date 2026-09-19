@@ -259,6 +259,70 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   }
 </style>
 
+<style>
+/* Gallery Direct Visibility Fix */
+.elementor-gallery__container {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 15px !important;
+}
+@media (max-width: 1024px) {
+    .elementor-gallery__container {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+@media (max-width: 600px) {
+    .elementor-gallery__container {
+        grid-template-columns: 1fr !important;
+    }
+}
+.e-gallery-item {
+    position: relative !important;
+    overflow: hidden !important;
+    border-radius: 8px !important;
+    aspect-ratio: 3 / 2 !important;
+    min-height: 240px !important;
+    display: block !important;
+}
+.e-gallery-image {
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 240px !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    display: block !important;
+    transition: transform 0.4s ease !important;
+}
+.e-gallery-item:hover .e-gallery-image {
+    transform: scale(1.05) !important;
+}
+.elementor-gallery-item__overlay {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background: rgba(0, 0, 0, 0.4) !important;
+    opacity: 0 !important;
+    transition: opacity 0.3s ease !important;
+}
+.elementor-gallery-item__content {
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    padding: 15px !important;
+    color: #fff !important;
+    opacity: 0 !important;
+    transition: opacity 0.3s ease !important;
+    z-index: 2 !important;
+}
+.e-gallery-item:hover .elementor-gallery-item__overlay,
+.e-gallery-item:hover .elementor-gallery-item__content {
+    opacity: 1 !important;
+}
+</style>
 </head>
 <body data-rsssl=1 class="rtl home wp-singular page-template-default page page-id-471 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor theme-default elementor-default elementor-kit-8 elementor-page elementor-page-471">
 
@@ -833,7 +897,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<div class="elementor-widget-container">
 							<div class="elementor-gallery__container">
 							<div class="e-gallery-item elementor-gallery-item elementor-animated-content" tabindex="0">
-					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="../wp-content/uploads/2025/02/group-meeting-around-table-at-graduate-recruitment-assessment-day-1536x1025.jpg" data-width="1536" data-height="1025" aria-label="group meeting" role="img" ></div>
+					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="../wp-content/uploads/2025/02/group-meeting-around-table-at-graduate-recruitment-assessment-day-1536x1025.jpg" data-width="1536" data-height="1025" aria-label="group meeting" role="img"  style="background-image: url('../wp-content/uploads/2025/02/group-meeting-around-table-at-graduate-recruitment-assessment-day-1536x1025.jpg');"></div>
 											<div class="elementor-gallery-item__overlay"></div>
 															<div class="elementor-gallery-item__content">
 														<div class="elementor-gallery-item__title">
@@ -841,7 +905,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 												</div>
 									</div>
 							<div class="e-gallery-item elementor-gallery-item elementor-animated-content" tabindex="0">
-					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="../wp-content/uploads/2025/02/selective-focus-of-cheerful-recruiter-standing-with-clipboard-near-coworkers-1536x1025.jpg" data-width="1536" data-height="1025" aria-label="intelligence woman" role="img" ></div>
+					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="../wp-content/uploads/2025/02/selective-focus-of-cheerful-recruiter-standing-with-clipboard-near-coworkers-1536x1025.jpg" data-width="1536" data-height="1025" aria-label="intelligence woman" role="img"  style="background-image: url('../wp-content/uploads/2025/02/selective-focus-of-cheerful-recruiter-standing-with-clipboard-near-coworkers-1536x1025.jpg');"></div>
 											<div class="elementor-gallery-item__overlay"></div>
 															<div class="elementor-gallery-item__content">
 														<div class="elementor-gallery-item__title">
@@ -849,7 +913,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 												</div>
 									</div>
 							<div class="e-gallery-item elementor-gallery-item elementor-animated-content" tabindex="0">
-					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="../wp-content/uploads/2025/02/businesswomen-holding-clipboard-reading-recruiter-cv-1536x1024.jpg" data-width="1536" data-height="1024" aria-label="video how to write cv" role="img" ></div>
+					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="../wp-content/uploads/2025/02/businesswomen-holding-clipboard-reading-recruiter-cv-1536x1024.jpg" data-width="1536" data-height="1024" aria-label="video how to write cv" role="img"  style="background-image: url('../wp-content/uploads/2025/02/businesswomen-holding-clipboard-reading-recruiter-cv-1536x1024.jpg');"></div>
 											<div class="elementor-gallery-item__overlay"></div>
 															<div class="elementor-gallery-item__content">
 														<div class="elementor-gallery-item__title">
@@ -857,7 +921,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 												</div>
 									</div>
 							<div class="e-gallery-item elementor-gallery-item elementor-animated-content" tabindex="0">
-					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="../wp-content/uploads/2025/02/recruitment-1536x1024.jpg" data-width="1536" data-height="1024" aria-label="recruitment" role="img" ></div>
+					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="../wp-content/uploads/2025/02/recruitment-1536x1024.jpg" data-width="1536" data-height="1024" aria-label="recruitment" role="img"  style="background-image: url('../wp-content/uploads/2025/02/recruitment-1536x1024.jpg');"></div>
 											<div class="elementor-gallery-item__overlay"></div>
 															<div class="elementor-gallery-item__content">
 														<div class="elementor-gallery-item__title">
@@ -865,7 +929,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 												</div>
 									</div>
 							<div class="e-gallery-item elementor-gallery-item elementor-animated-content" tabindex="0">
-					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="../wp-content/uploads/2025/02/recruiter-smiling-and-shaking-hands-with-employee-at-job-interview-in-office-1536x1025.jpg" data-width="1536" data-height="1025" aria-label="interview" role="img" ></div>
+					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="../wp-content/uploads/2025/02/recruiter-smiling-and-shaking-hands-with-employee-at-job-interview-in-office-1536x1025.jpg" data-width="1536" data-height="1025" aria-label="interview" role="img"  style="background-image: url('../wp-content/uploads/2025/02/recruiter-smiling-and-shaking-hands-with-employee-at-job-interview-in-office-1536x1025.jpg');"></div>
 											<div class="elementor-gallery-item__overlay"></div>
 															<div class="elementor-gallery-item__content">
 														<div class="elementor-gallery-item__title">
@@ -873,7 +937,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 												</div>
 									</div>
 							<div class="e-gallery-item elementor-gallery-item elementor-animated-content" tabindex="0">
-					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="../wp-content/uploads/2025/02/woman-shaking-hands-with-cheerful-recruiter-in-glasses-holding-clipboard-1536x1025.jpg" data-width="1536" data-height="1025" aria-label="interview" role="img" ></div>
+					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="../wp-content/uploads/2025/02/woman-shaking-hands-with-cheerful-recruiter-in-glasses-holding-clipboard-1536x1025.jpg" data-width="1536" data-height="1025" aria-label="interview" role="img"  style="background-image: url('../wp-content/uploads/2025/02/woman-shaking-hands-with-cheerful-recruiter-in-glasses-holding-clipboard-1536x1025.jpg');"></div>
 											<div class="elementor-gallery-item__overlay"></div>
 															<div class="elementor-gallery-item__content">
 														<div class="elementor-gallery-item__title">
